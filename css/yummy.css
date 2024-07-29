@@ -1,0 +1,177 @@
+body{
+    background-color: black;
+    position: relative;
+    color: white;
+}
+/* sideBar */
+.sideBar{
+    position: relative;
+    z-index: 9999;
+}
+.innerSide{
+    background-color: black;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+
+}
+.outterSide{
+    background-color: white;
+    width: 60px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 250px; 
+}
+.sideBar .social i{
+    font-size: 15px;
+}
+.list{
+    transition: 2s;
+}
+.content li{
+    position: relative;
+    bottom: -1000px;
+}
+.content li:hover{
+    cursor: pointer;
+}
+/* mainPage */
+.mainCol{
+    position: relative;
+}
+.mainCol img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.layer{
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    right: 0;
+    background-color: #6e6e6e64;
+    overflow: hidden;
+    width: 93%;
+    height: 0;
+    transition: .5s ease;
+    overflow: hidden;
+}
+.layer h3{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left:5px ;
+}
+.mainCol:hover .layer{
+    height: 100%;
+}
+
+
+.ing span{
+    display: inline-block;
+    color: #055160;
+    background-color: #cff4fc;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.youtube,.source{
+    transition: 0.5s;
+    text-decoration: none;
+}
+.youtube:hover{
+    background-color: #d9544fb7 !important;
+}
+.source:hover{
+    background-color: #5cb85c69 !important;
+}
+::placeholder{
+    color: #838383 !important;
+}
+@media only screen and (max-width: 600px) {
+    .mainPage {
+      margin-left: 50px;
+    }
+  }
+  .areaBox:hover,.ingBox:hover{
+    cursor: pointer;
+  }
+
+  .contact .col p{
+    text-align: center;
+    color: rgb(194, 0, 0);
+    background-color: rgb(254, 189, 189);
+    border: 1px solid rgb(194, 0, 0);
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  #submitBtn{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: rgb(194, 0, 0);
+    border: 1px solid rgb(194, 0, 0);
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: fit-content;
+    transition: 0.5;
+  }
+
+  #submitBtn:hover{
+    background-color: rgb(194, 0, 0) !important;
+    color: white !important;
+  }
+
+  .loading,.loading2{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  .loading2{
+    display: none;
+  }
+  .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    animation: pulse 1s linear infinite;
+    top: 50%;
+    left: 50%;
+  }
+  .loader:after {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: scaleUp 1s linear infinite;
+  }
+  
+  @keyframes scaleUp {
+    0% { transform: translate(-50%, -50%) scale(0) }
+    60% , 100% { transform: translate(-50%, -50%)  scale(1)}
+  }
+  @keyframes pulse {
+    0% , 60% , 100%{ transform:  scale(1) }
+    80% { transform:  scale(1.2)}
+  }

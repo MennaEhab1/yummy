@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/yummy.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Yummy</title>
+    <!-- <link rel="icon" href="imgs/logo.png"> -->
+</head>
+<body>
+    <!-- sideBar -->
+<div class="sideBar" style="width: 400px; z-index: 99999;">
+    <div class="innerSide text-white d-flex flex-column justify-content-between">
+        <ul class="content list-unstyled p-3">
+            <li class="m-3 fadeItem" id="searchItem">Search</li>
+            <li class="m-3 fadeItem" id="cate">Categories</li>
+            <li class="m-3 fadeItem" id="areaItem">Area</li>
+            <li class="m-3 fadeItem" id="ingItem">Ingredients</li>
+            <li class="m-3 fadeItem" id="contactItem">Contact Us</li>
+        </ul>
+        <div class="copyRight p-3">
+            <div class="social">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-globe"></i>
+            </div>
+            <p>Copyright Â© 2023 All Rights
+                Reserved.</p>
+        </div>
+    </div>
+    <div class="outterSide d-flex flex-column justify-content-between">
+        <div class="logo p-1 mt-4">
+            <img src="imgs/logo.png" style="width: 50px;" alt="">
+        </div>
+        <div class="listIcon p-2">
+            <i class="list bi bi-list fs-1 fw-bolder text-black"></i>
+            <i class="close bi bi-x fs-1 fw-bolder text-black d-none"></i>
+        </div>
+        <div class="share fw-bolder fs-5 p-3">
+            <i class="bi bi-globe text-black"></i><br>
+            <i class="bi bi-share-fill text-black"></i>
+        </div>
+    </div>
+</div>
+<!-- loader -->
+<section class="loading">
+    <span class="loader"></span>    
+</section>
+
+<!-- mainPage -->
+
+<div class="mainPage">
+<div class="container">
+    <section class="loading2">
+        <span class="loader"></span>    
+    </section>
+
+    <div id="searchForm" class="mt-4">
+        
+    </div>
+    <div class="row px-1 g-4" id="frontMeals">
+        
+    </div>
+
+</div>
+</div>
+</body>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/yummy.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>
+
